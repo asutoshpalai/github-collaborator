@@ -30,6 +30,10 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
   var username = req.body.username;
+
+  if (!username.match(/^[A-Z0-9-]+$/i)) {
+    return res.send("Hey! What are you trying to do? <br>Enter a valid username");
+  }
   console.log("granting access to user " + username);
   request.put({
     url:'https://api.github.com/repos/' + owner + '/' + repo + '/collaborators/' + username + '?access_token=' + githubToken,
