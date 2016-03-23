@@ -1,6 +1,6 @@
 # Github Collaboration
 
-A web app to add collaborators to a private GitHub repo.
+A web app to add collaborators themselves to a private GitHub repo.
 This uses GitHub API for the same.
 
 To use this application you have to generate a GitHub OAuth token [in the settings](https://github.com/settings/tokens) with repo scope.
@@ -8,6 +8,9 @@ To use this application you have to generate a GitHub OAuth token [in the settin
 The access to the application is guarded by a token which you shall keep secret and give only to the people whom you want to access.
 
 This can be easily deployed to Heroku or OpenShift.
+
+## Use
+To access the page you have to send the token as `auth_token` query parameter. So, if you have deployed it at `https://xyz.apphost.com`, to access you have to give the address `https://xyz.apphost.com/?auth_token=your.auth.token`.
 
 ## Setup
 For the application to work properly, you need to set appropriate environment variables.

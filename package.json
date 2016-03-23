@@ -8,7 +8,8 @@
     "start": "node index.js"
   },
   "author": "Asutosh Palai <asupalai@gmail.com>",
-  "license": "MIT",
+  "repo": "https://github.com/asutoshpalai/github-collaborator",
+  "license": "GNU GPLv3",
   "dependencies": {
     "body-parser": "^1.15.0",
     "dotenv": "^2.0.0",
